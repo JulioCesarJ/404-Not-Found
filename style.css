@@ -1,0 +1,102 @@
+/* Css Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variveis */
+:root {
+  --Title: 'Inconsolata', monospace;
+  --Text: 'Space Mono', monospace;
+  --Button-bg: #333333;
+  --Text-color: #4F4F4F;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin-top: 20px;
+}
+
+.titulo {
+  text-transform: uppercase;
+  margin-left: 24px;
+  font-size: 14px;
+  font-family: var(--Title);
+  font-weight: 700;
+}
+
+.image {
+  padding: 64px 44px;
+}
+
+.title {
+  color: var(--Button-bg);
+  font-family: var(--Text);
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0px 1px 30px 24px;
+}
+
+.subtitle {
+  color: var(--Text-color);
+  font-size: 18px;
+  font-family: var(--Text);
+  font-weight: 400;
+  margin: 0px 24px 66px;
+}
+
+.button {
+  text-transform: uppercase;
+  margin-left: 24px;
+  margin-bottom: 114px;
+  color: white;
+  font-size: 14px;
+  font-family: var(--Text);
+  font-weight: 700;
+  background-color: var(--Button-bg);
+  padding: 24px 43px;
+}
+
+#footer {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #BDBDBD;
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+  .titulo {
+    margin-bottom: 200px;
+  }
+
+  #main {
+    display: grid;
+    margin: 0 77px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 120px;
+  }
+
+  .image {
+    max-width: 540px;
+    padding: 0;
+  }
+
+  .title {
+    font-size: 64px;
+    margin-left: 0;
+  }
+
+  .subtitle {
+    max-width: 381px;
+    margin-left: 0;
+    font-size: 24px;
+  }
+}
